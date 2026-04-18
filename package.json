@@ -1,17 +1,27 @@
 {
-  "name": "strip-ts",
+  "name": "strip.ts",
   "version": "0.0.1",
   "description": "Recursively strip empty values from objects and arrays.",
-  "main": "src/strip.ts",
-  "types": "src/strip.ts",
-  "files": ["src"],
+  "main": "dist/strip.js",
+  "types": "dist/strip.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": ["strip", "omit", "empty", "object", "typescript"],
+  "keywords": [
+    "strip",
+    "omit",
+    "empty",
+    "object",
+    "utils"
+  ],
   "author": "0xA672",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^25.6.0",
     "typescript": "^5.0.0"
   }
 }
