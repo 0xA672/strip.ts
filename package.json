@@ -1,5 +1,5 @@
 {
-  "name": "strip.ts",
+  "name": "@0xa672/strip.ts",
   "version": "0.0.1",
   "description": "Recursively strip empty values from objects and arrays.",
   "main": "dist/strip.js",
